@@ -12,4 +12,3 @@ Only exceptions are <code>store.tsx</code> for context examples which is in the 
 
 For some examples I used [TechZ's tutorial video](https://youtu.be/BnIhk4igd8I). It was pretty useful
 
-<p>Some Markdown text with <span style="color:#f234f6">some <em>blue</em> text</span>.</p>
