@@ -14,12 +14,12 @@ type Props = {
 };
 
 export const RadioBox_FromContext: React.FC<Props> = (props: Props) => {
-  const [ value, setValue] = useContext(RadioButtonsContext_Fruits);
+   {/* const { value, setValue } = useContext(RadioButtonsContext_Fruits);
 
-  const handleChange = (event:any) => {
-     setValue(event.target.value);    
+  function handleChange(event: React.ChangeEvent<unknown>) {
+     setValue((event.target as HTMLInputElement).value);    
   }
-
+*/}
   const createItem = (radioItem: any) => (
     <StyledFormControlLabel      
       key={radioItem.id}
@@ -41,7 +41,7 @@ export const RadioBox_FromContext: React.FC<Props> = (props: Props) => {
       vertical={props.vertical} 
     >
       <div>{props.boxLabel}</div>
-      <RadioGroup value={value} onClick={handleChange}>
+      <RadioGroup /* value={value} onChange={handleChange} */>
         {props.radioLabels.map(radioItem => createItem(radioItem))}
       </RadioGroup>
     </StyledFormControl>
