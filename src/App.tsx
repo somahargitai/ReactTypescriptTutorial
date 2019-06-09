@@ -3,6 +3,9 @@ import logo from "./logo.svg";
 import "./App.css";
 import { Button, createMuiTheme, Typography } from "@material-ui/core";
 import MuiThemeProvider from "@material-ui/core/styles/MuiThemeProvider";
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fas, faBell, faCheckCircle, faInfo, faQuestionCircle, faSearch } from '@fortawesome/free-solid-svg-icons';
+import { far, faCircle } from '@fortawesome/free-regular-svg-icons';
 import { muiTheme } from "./theme/mui-theme";
 import { RadioBox } from "./components/RadioBox";
 import { RadioBox3 } from "./components/RadioBox3";
@@ -13,6 +16,8 @@ import { RadioBox_FromContext } from "./components/RadioBox_FromContext";
 import { RadioButtonsContext_Fruits as Store } from "./store";
 import { ToDoList } from "./components/ToDoList/index";
 import { Something } from "./components/Something";
+ 
+library.add(far, faCircle, fas, faBell, faCheckCircle, faInfo, faQuestionCircle, faSearch);
 
 // const theme1 = createMuiTheme();
 // console.log(theme1)
