@@ -10,6 +10,14 @@ I created this tutorial to collect demos on typical problems occur in this stack
 
 Only exceptions are <code>store.tsx</code> for context examples which is in the root folder; and _fontawesome library_, which is defined in <code>App.tsx</code>, so its usage is simplier.
 
-For some examples I used [TechZ's tutorial video](https://youtu.be/BnIhk4igd8I). It was pretty useful
-
-<p>Some Markdown text with <span style="color:#f234f6">some <em>blue</em> text</span>.</p>
+### useful resources:
+- For some examples I used [TechZ's tutorial video](https://youtu.be/BnIhk4igd8I). It was pretty useful, it starts from simple examples, reaching the Rick & Morty episode list application
+- Documentation: 
+[TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/basic-types.html), 
+[Styled Components website](https://www.styled-components.com/), 
+[Material UI website](https://material-ui.com/), 
+[Fontawesome docs](https://fontawesome.com/how-to-use/on-the-web/referencing-icons/basic-use), [Introducing React Hooks](https://reactjs.org/docs/hooks-intro.html)
+- Github repos
+  - [traffic lights](https://github.com/KoichiKiyokawa/traffic-light-with-react)
+- Gabe Ragland's [React Hook recipes](https://usehooks.com/), 
+Stefan Baumgartner's [Typescript and React intro](https://fettblog.eu/typescript-react/)

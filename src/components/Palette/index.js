@@ -1,12 +1,16 @@
-import React, { useState, Fragment } from 'react';
+import React, { Fragment } from 'react';
 import { PaletteElement } from './style';
-import { RadioBoxPropState } from '../RadioBoxPropState';
+
+/*
+  In this element you should check in style.tsx how
+  conditional styles are implemented with Styled
+  Components in embedded styles, using the double
+  ampersand operator. You can find similar examples
+  on styled components main page:
+  https://www.styled-components.com/
+*/
 
 export const Palette = () => {
-  // Declare a new state variable, which we'll call "count"
-  const [count, setCount] = useState(17);
-  const [radioSelection, setRadioSelection] = useState('');
-
   return (
     <Fragment>
       <a href='https://coolors.co/c3a796-f8f4f3-600743-5a545c-143339'>
@@ -16,17 +20,6 @@ export const Palette = () => {
         <PaletteElement forth />
         <PaletteElement fifth />
       </a>
-      <RadioBoxPropState
-        boxLabel= 'hey yo'
-        value = {radioSelection}
-        setValue = {setRadioSelection}
-        radioLabels= {[
-          { label:'some',    id: 'abc12' },
-          { label:'thing',  id: 'abc21' },
-          { label:'blue', id: 'abc23' },
-        ]}
-        vertical= {false}
-      />
     </Fragment>
   );
 }
