@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { HookStatesContainer } from './style';
 
-export const Counter_HookStates = ({initialCount = 27}) => {
+export const Counter_useState = ({initialCount = 27}) => {
   const [count, setCount] = useState(initialCount);
 
   /* only necessary for advanced buttons */

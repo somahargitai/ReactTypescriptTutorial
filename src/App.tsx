@@ -17,14 +17,14 @@ import { muiTheme } from "./theme/mui-theme";
 import { RadioBox } from "./components/RadioBox";
 import { RadioBoxWithFontaweSome } from "./components/RadioBoxWithFontawesome";
 import { StyledButtonCollection } from "./components/StyledButton";
-import { Counter_HookStates } from "./components/Counter_HookStates";
+import { Counter_useState } from "./components/Counter_useState";
 import { Palette } from "./components/Palette";
 import { RadioBox_FromContext } from "./components/RadioBox_FromContext";
 import { RadioButtonsContext_Fruits as Store } from "./store";
 import { ToDoList } from "./components/ToDoList/index";
-import { Something } from "./components/Something";
 import { RadioBoxPropState } from "./components/RadioBoxPropState/index";
 import { RadioBoxSimple } from './components/RadioBoxSimple';
+import { Counter_useReducer } from './components/Counter_useReducer';
 
 library.add(
   far,
@@ -64,7 +64,6 @@ const App: React.FC = () => {
           </span>
         </header>
 
-        <Something />
         
         <Typography>It is Typography</Typography>
 
@@ -80,6 +79,14 @@ const App: React.FC = () => {
         </Button>
         <Typography>Her comes the Styled Button Collection:</Typography>
         <StyledButtonCollection />
+
+
+        <h3> Counters </h3>
+        <h4>A simple counter, using useReducer</h4>
+        <Counter_useReducer />
+        <h4>Another counter, using useState</h4>
+        <Counter_useState /* initialCount={17} */ />
+
 
         <h3>Radioboxes</h3>
         <h4> Simple RadioBox with default Material UI layout </h4>
@@ -136,9 +143,6 @@ const App: React.FC = () => {
             { label: "Topology", id: "top" }
           ]}
         />
-
-        <h3> Counter </h3>
-        <Counter_HookStates /* initialCount={17} */ />
 
         <h3> Text Area </h3>
         <ToDoList />
