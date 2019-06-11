@@ -19,5 +19,6 @@ Only exceptions are <code>store.tsx</code> for context examples which is in the 
 [Fontawesome docs](https://fontawesome.com/how-to-use/on-the-web/referencing-icons/basic-use), [Introducing React Hooks](https://reactjs.org/docs/hooks-intro.html)
 - Github repos
   - [traffic lights](https://github.com/KoichiKiyokawa/traffic-light-with-react)
+  - [simple media player](https://github.com/Upmostly/react-use-context-hook)
 - Gabe Ragland's [React Hook recipes](https://usehooks.com/), 
 Stefan Baumgartner's [Typescript and React intro](https://fettblog.eu/typescript-react/)
