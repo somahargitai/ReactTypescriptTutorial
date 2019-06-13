@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import {
   FormControlLabel,
   FormControl,
-  Button } from '@material-ui/core';
+} from '@material-ui/core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export const StyledFormControlLabel = styled(props => (

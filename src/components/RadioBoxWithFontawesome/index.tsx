@@ -1,5 +1,5 @@
-import React, { Component, Fragment } from 'react';
-import { Radio, RadioGroup, FormControl } from '@material-ui/core';
+import React from 'react';
+import { Radio, RadioGroup } from '@material-ui/core';
 import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 import { faCircle } from '@fortawesome/free-regular-svg-icons';
 import {

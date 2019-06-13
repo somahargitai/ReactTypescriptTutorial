@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React from 'react';
 import { OneButton, OneExtendedButton } from './style';
 
 type Props = {};

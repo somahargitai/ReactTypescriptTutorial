@@ -1,35 +1,34 @@
 import React, { useState, useContext } from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import { Button, createMuiTheme, Typography } from "@material-ui/core";
+import { Button, Typography } from "@material-ui/core";
 import MuiThemeProvider from "@material-ui/core/styles/MuiThemeProvider";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
-  fas,
   faBell,
   faCheckCircle,
   faInfo,
   faQuestionCircle,
   faSearch
 } from "@fortawesome/free-solid-svg-icons";
-import { far, faCircle } from "@fortawesome/free-regular-svg-icons";
+import { faCircle } from "@fortawesome/free-regular-svg-icons";
 import { muiTheme } from "./theme/mui-theme";
 import { RadioBox } from "./components/RadioBox";
+import { RadioBoxTextField } from './components/RadioBoxTextField';
 import { RadioBoxWithFontaweSome } from "./components/RadioBoxWithFontawesome";
 import { StyledButtonCollection } from "./components/StyledButton";
-import { Counter_useState } from "./components/Counter_useState";
+import { CounterUseState } from "./components/CounterUseState";
 import { Palette } from "./components/Palette";
-import { RadioBox_FromContext } from "./components/RadioBox_FromContext";
-import { RadioButtonsContext_Fruits as Store } from "./store";
+import { RadioBoxFromContext } from "./components/RadioBoxFromContext";
+import { RadioButtonsContextFruits as Store } from "./store";
 import { ToDoList } from "./components/ToDoList/index";
 import { RadioBoxPropState } from "./components/RadioBoxPropState/index";
 import { RadioBoxSimple } from './components/RadioBoxSimple';
-import { Counter_useReducer } from './components/Counter_useReducer';
+import { CounterUseReducer } from './components/CounterUseReducer';
+import { RickAndMorty } from "./components/RickMorty";
 
 library.add(
-  far,
   faCircle,
-  fas,
   faBell,
   faCheckCircle,
   faInfo,
@@ -64,6 +63,7 @@ const App: React.FC = () => {
           </span>
         </header>
 
+        <RickAndMorty />
         
         <Typography>It is Typography</Typography>
 
@@ -83,9 +83,9 @@ const App: React.FC = () => {
 
         <h3> Counters </h3>
         <h4>A simple counter, using useReducer</h4>
-        <Counter_useReducer />
+        <CounterUseReducer />
         <h4>Another counter, using useState</h4>
-        <Counter_useState /* initialCount={17} */ />
+        <CounterUseState /* initialCount={17} */ />
 
 
         <h3>Radioboxes</h3>
@@ -134,7 +134,7 @@ const App: React.FC = () => {
         />
 
         <h4> RadioBox From Context </h4>
-        <RadioBox_FromContext
+        <RadioBoxFromContext
           boxLabel="Mathematics"
           vertical={false}
           radioLabels={[
@@ -144,8 +144,11 @@ const App: React.FC = () => {
           ]}
         />
 
-        <h3> Text Area </h3>
+        <h3> Text Area, creating ToDoList </h3>
         <ToDoList />
+
+        <h3> Radiobox with optional Text Area </h3>
+        <RadioBoxTextField />
 
         <h3> That's all, Folks! </h3>
       </div>

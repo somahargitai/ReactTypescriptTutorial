@@ -1,7 +1,7 @@
 import React, { useReducer } from "react";
 
 type Props = {};
-export const Counter_useReducer: React.FC<Props> = (props: Props) => {
+export const CounterUseReducer: React.FC<Props> = (props: Props) => {
   const reducer = (state: any, action: any) => {
     switch (action) {
       case "ADD": return state + 1;

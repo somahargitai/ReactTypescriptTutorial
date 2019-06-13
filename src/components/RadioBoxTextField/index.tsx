@@ -1,10 +1,10 @@
-import React, { Component, useState } from "react";
+import React, { useState } from "react";
 import {
   FormControl,
   FormLabel,
   RadioGroup,
   FormControlLabel,
-  Radio
+  Radio,
 } from "@material-ui/core";
 import { OtherRadio } from "./OtherRadio";
 

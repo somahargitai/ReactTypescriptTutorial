@@ -1,13 +1,6 @@
-import React, { Component, Fragment } from 'react';
+import React from 'react';
 import { Radio, RadioGroup, FormControl, FormControlLabel } from '@material-ui/core';
-import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
-import { faCircle } from '@fortawesome/free-regular-svg-icons';
-/* import {
-  StyledFormControlLabel,
-  StyledFormControl,
-  FaRadioIcon
-} from './style';
-*/
+
 type Props = {
   radioLabels: Array<Object>;
 };
