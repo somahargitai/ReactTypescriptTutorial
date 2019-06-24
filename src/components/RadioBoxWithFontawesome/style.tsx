@@ -22,13 +22,16 @@ export const StyledFormControlLabel = styled(props => (
   & > div {
     display: flex;
     flex-wrap: nowrap;    
-    ${props => props.vertical === true ?
-      ` flex-direction: column; `:
-      ` flex-direction: row; `};
   }
 
   `;
-  
+  /**
+   *     ${props => props.vertical === true ?
+      ` flex-direction: column; `:
+      ` flex-direction: row; `};
+   * 
+   * 
+   */
   export const FaRadioIcon = styled(props => <FontAwesomeIcon {...props} />)`
     display: flex;
     align-items: center;

@@ -20,7 +20,7 @@ export const StyledFormControlLabel = styled(props => (
 `;
 
 export const StyledFormControl = styled(props => 
-  <FormControl {...props} />
+  <FormControl />
 )`
   padding: 0px 10px 5px 10px !important;
   font-family: 'GE Inspira Sans';

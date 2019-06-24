@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import { Button, Typography } from "@material-ui/core";
@@ -20,12 +20,12 @@ import { StyledButtonCollection } from "./components/StyledButton";
 import { CounterUseState } from "./components/CounterUseState";
 import { Palette } from "./components/Palette";
 import { RadioBoxFromContext } from "./components/RadioBoxFromContext";
-import { RadioButtonsContextFruits as Store } from "./store";
+
 import { ToDoList } from "./components/ToDoList/index";
 import { RadioBoxPropState } from "./components/RadioBoxPropState/index";
 import { RadioBoxSimple } from './components/RadioBoxSimple';
 import { CounterUseReducer } from './components/CounterUseReducer';
-import { RickAndMorty } from "./components/RickMorty";
+
 
 library.add(
   faCircle,
@@ -42,7 +42,7 @@ console.log(muiTheme);
 
 
 const App: React.FC = () => {
-  const store = useContext(Store);
+
   const [state, setState] = useState("");
 
   return (
@@ -63,7 +63,7 @@ const App: React.FC = () => {
           </span>
         </header>
 
-        <RickAndMorty />
+        
         
         <Typography>It is Typography</Typography>
 
@@ -106,7 +106,6 @@ const App: React.FC = () => {
             { label: "Orange", id: "orange" },
             { label: "Pear", id: "pear" }
           ]}
-          vertical={false}
         />
 
         <h4>Radiobox</h4>

@@ -1,5 +1,5 @@
-import React, { useState, useReducer, Props } from "react";
-import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
+import React, { useReducer } from "react";
+
 /*
 export const RadioButtonsContext_Fruits = React.createContext<any>('');
 

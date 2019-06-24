@@ -1,6 +1,6 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { Radio, RadioGroup } from '@material-ui/core';
-import { RadioButtonsContextFruits } from '../../store';
+// import { RadioButtonsContextFruits } from '../../store';
 import {
   StyledFormControlLabel,
   StyledFormControl,
@@ -10,16 +10,16 @@ import {
 type Props = {
   boxLabel?: any;
   radioLabels: Array<Object>;
-  vertical: any;
+  vertical: boolean;
 };
 
 export const RadioBoxFromContext: React.FC<Props> = (props: Props) => {
-   {/* const { value, setValue } = useContext(RadioButtonsContext_Fruits);
+   /* const { value, setValue } = useContext(RadioButtonsContext_Fruits);
 
   function handleChange(event: React.ChangeEvent<unknown>) {
      setValue((event.target as HTMLInputElement).value);    
   }
-*/}
+*/
   const createItem = (radioItem: any) => (
     <StyledFormControlLabel      
       key={radioItem.id}

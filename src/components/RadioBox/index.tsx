@@ -11,7 +11,7 @@ import {
 type Props = {
   boxLabel: any;
   radioLabels: Array<Object>;
-  vertical: any;
+  vertical: boolean;
 };
 
 export const RadioBox: React.FC<Props> = (props: Props) => {

@@ -20,7 +20,7 @@ export const StyledFormControlLabel = styled(props => (
 `;
 
 export const StyledFormControl = styled(props => 
-  <FormControl {...props} />
+  <FormControl />
 )`
   & > div {
     color: #67748D;

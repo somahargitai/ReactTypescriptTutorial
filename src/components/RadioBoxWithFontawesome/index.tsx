@@ -11,7 +11,6 @@ import {
 type Props = {
   boxLabel: any;
   radioLabels: Array<Object>;
-  vertical: any;
 };
 
 export const RadioBoxWithFontaweSome: React.FC<Props> = (props: Props) => {
@@ -42,7 +41,6 @@ export const RadioBoxWithFontaweSome: React.FC<Props> = (props: Props) => {
 
   return (
     <StyledFormControl 
-      vertical={props.vertical} 
     >
       <p>{props.boxLabel}</p>
       <RadioGroup value={value} onClick={handleChange}>

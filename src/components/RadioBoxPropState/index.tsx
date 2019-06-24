@@ -9,7 +9,7 @@ import {
 type Props = {
   boxLabel?: any;
   radioLabels: Array<Object>;
-  vertical: any;
+  vertical: boolean;
   setValue: any;
   value: string;
 };
