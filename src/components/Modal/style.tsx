@@ -6,7 +6,8 @@ export const Content =styled(props=><div {...props} />)`
   padding: 20px 20px 75px 20px;
 `;
 
-export const CloseButton = styled(props => <Button {...props} />)`
+export const CloseButton = styled(
+  ({level, landing,...props}) => <Button {...props} />)`  
   min-height: 46px;
   padding: 6px 0px;
   position: absolute !important;
@@ -32,7 +33,8 @@ export const CloseButton = styled(props => <Button {...props} />)`
   }
 `;
 
-export const Stripe = styled(props => <div {...props} />)`
+export const Stripe = styled(
+  ({level, ...props}) => <div {...props} />)`
   height: 5px;
   ${props =>
     props.level === "error"
@@ -63,8 +65,3 @@ export const StyledModal = styled(props => <Modal {...props} />)`
     font-size: 16pt;
   }
 `;
-
-
-// & > div > div > div#content {
-//   padding: 20px 20px 75px 20px;
-// }
