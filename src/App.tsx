@@ -14,7 +14,7 @@ import {
 import { faCircle } from "@fortawesome/free-regular-svg-icons";
 import { muiTheme } from "./theme/mui-theme";
 import { RadioBox } from "./components/RadioBox";
-import { RadioBoxTextField } from './components/RadioBoxTextField';
+import { RadioBoxTextField } from "./components/RadioBoxTextField";
 import { RadioBoxWithFontaweSome } from "./components/RadioBoxWithFontawesome";
 import { StyledButtonCollection } from "./components/StyledButton";
 import { CounterUseState } from "./components/CounterUseState";
@@ -23,9 +23,9 @@ import { RadioBoxFromContext } from "./components/RadioBoxFromContext";
 
 import { ToDoList } from "./components/ToDoList/index";
 import { RadioBoxPropState } from "./components/RadioBoxPropState/index";
-import { RadioBoxSimple } from './components/RadioBoxSimple';
-import { CounterUseReducer } from './components/CounterUseReducer';
-
+import { RadioBoxSimple } from "./components/RadioBoxSimple";
+import { CounterUseReducer } from "./components/CounterUseReducer";
+import { Modal } from "./components/Modal";
 
 library.add(
   faCircle,
@@ -40,10 +40,9 @@ library.add(
 // console.log(theme1)
 console.log(muiTheme);
 
-
 const App: React.FC = () => {
-
   const [state, setState] = useState("");
+  const [modalState, setModalState] = useState(false);
 
   return (
     <MuiThemeProvider theme={muiTheme}>
@@ -65,9 +64,6 @@ const App: React.FC = () => {
 
         <Typography>It is Typography</Typography>
 
-        <h3> Palette </h3>
-        <Palette />
-
         <h2> Form Elements </h2>
 
         <h3> Simple Buttons </h3>
@@ -78,13 +74,11 @@ const App: React.FC = () => {
         <Typography>Her comes the Styled Button Collection:</Typography>
         <StyledButtonCollection />
 
-
         <h3> Counters </h3>
         <h4>A simple counter, using useReducer</h4>
         <CounterUseReducer />
         <h4>Another counter, using useState</h4>
         <CounterUseState /* initialCount={17} */ />
-
 
         <h3>Radioboxes</h3>
         <h4> Simple RadioBox with default Material UI layout </h4>
@@ -146,6 +140,21 @@ const App: React.FC = () => {
 
         <h3> Radiobox with optional Text Area </h3>
         <RadioBoxTextField />
+
+        <h2> Page level elements </h2>
+
+        <h3>Modal for alerts and landing messages</h3>
+        <Modal
+          open={modalState}
+          setOpen={setModalState}
+          title="Alert"
+          message="Modal message can be here."
+          level="error"
+          landing={true}
+        />
+
+        <h3> Palette </h3>
+        <Palette />
 
         <h3> That's all, Folks! </h3>
       </div>
