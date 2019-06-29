@@ -63,8 +63,6 @@ const App: React.FC = () => {
           </span>
         </header>
 
-        
-        
         <Typography>It is Typography</Typography>
 
         <h3> Palette </h3>

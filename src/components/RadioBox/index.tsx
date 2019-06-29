@@ -44,7 +44,7 @@ export const RadioBox: React.FC<Props> = (props: Props) => {
     <StyledFormControl 
       vertical={props.vertical} 
     >
-      <p>{props.boxLabel}</p>
+      <div>{props.boxLabel}</div>
       <RadioGroup value={value} onChange={handleChange}>
         {props.radioLabels.map(radioItem => createItem(radioItem))}
       </RadioGroup>

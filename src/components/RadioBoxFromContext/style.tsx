@@ -19,8 +19,9 @@ export const StyledFormControlLabel = styled(props => (
   }
 `;
 
-export const StyledFormControl = styled(props => 
-  <FormControl />
+export const StyledFormControl = styled(
+({ vertical, ...props })=> 
+  <FormControl {...props} />
 )`
   & > div {
     color: #67748D;

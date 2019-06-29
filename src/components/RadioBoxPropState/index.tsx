@@ -9,7 +9,7 @@ import {
 type Props = {
   boxLabel?: any;
   radioLabels: Array<Object>;
-  vertical: boolean;
+  vertical: any;
   setValue: any;
   value: string;
 };
@@ -36,9 +36,7 @@ export const RadioBoxPropState: React.FC<Props> = (props: Props) => {
   );
 
   return (
-    <StyledFormControl 
-      vertical={props.vertical} 
-    >
+    <StyledFormControl vertical={props.vertical}>
       <div>{props.boxLabel}</div>
       <RadioGroup value={props.value} onChange={handleChange}>
         {props.radioLabels.map(radioItem => createItem(radioItem))}
