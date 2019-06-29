@@ -25,7 +25,7 @@ import { ToDoList } from "./components/ToDoList/index";
 import { RadioBoxPropState } from "./components/RadioBoxPropState/index";
 import { RadioBoxSimple } from './components/RadioBoxSimple';
 import { CounterUseReducer } from './components/CounterUseReducer';
-
+import { Modal } from "./components/Modal";
 
 library.add(
   faCircle,
@@ -44,6 +44,7 @@ console.log(muiTheme);
 const App: React.FC = () => {
 
   const [state, setState] = useState("");
+  const [modalState, setModalState] = useState(false);
 
   return (
     <MuiThemeProvider theme={muiTheme}>
@@ -64,9 +65,6 @@ const App: React.FC = () => {
         </header>
 
         <Typography>It is Typography</Typography>
-
-        <h3> Palette </h3>
-        <Palette />
 
         <h2> Form Elements </h2>
 
@@ -146,6 +144,22 @@ const App: React.FC = () => {
 
         <h3> Radiobox with optional Text Area </h3>
         <RadioBoxTextField />
+
+        <h2> Page level elements </h2>
+
+        <h3>Modal for alerts and landing messages</h3>
+        <Modal 
+          open = {modalState}
+          setOpen = {setModalState}
+          title = 'Alert'
+          message = "Modal message can be here."
+          level = "error"
+          landing = {true}
+        />
+
+        <h3> Palette </h3>
+        <Palette />
+
 
         <h3> That's all, Folks! </h3>
       </div>
